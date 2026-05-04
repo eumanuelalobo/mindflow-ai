@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🧠 Mindflow AI - Mentor de Estudos Inteligente
+O Mindflow AI é uma plataforma robusta desenvolvida para otimizar o aprendizado técnico de estudantes de tecnologia. Utilizando a API do Google Gemini, o sistema atua como um mentor que simplifica conceitos complexos e os organiza em um histórico persistente para revisão contínua.
 
-## Getting Started
+🏛️ Arquitetura do Sistema
+O projeto foi estruturado sob o princípio de desacoplamento, utilizando uma arquitetura API-First. Isso garante que a inteligência do sistema resida no Backend, permitindo que múltiplos clientes consumam os mesmos dados via JSON de forma segura e escalável.
 
-First, run the development server:
+🚀 Tecnologias e Stack Técnica
+Backend (O Core)
+Python & Django: Base do servidor de aplicação.
 
-```bash
+Django Ninja: Utilizado para a construção de APIs REST modernas, garantindo alta performance e documentação automatizada.
+
+PostgreSQL: Banco de dados relacional para armazenamento seguro de usuários e histórico.
+
+JWT (JSON Web Token): Autenticação Stateless para garantir a segurança das rotas.
+
+Frontend (Web)
+Next.js (React): Framework para uma interface reativa e otimizada.
+
+Tailwind CSS: Estilização baseada em utilitários para um design moderno e responsivo.
+
+React Markdown: Renderização técnica para suporte a tabelas, listas e blocos de código nas explicações da IA.
+
+🛠️ Como Executar o Projeto
+1. Backend (Django)
+Bash
+cd backend
+python -m venv venv
+# No Windows: venv\Scripts\activate
+# No Linux/Mac: source venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+2. Frontend (Next.js)
+Bash
+cd frontend
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌟 Funcionalidades de Destaque
+Explicação Técnica com IA: Integração direta com o Gemini para decompor temas de Análise e Desenvolvimento de Sistemas.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Persistência e Ordenação: Histórico de estudos salvo no banco de dados com ordenação cronológica automática.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sessão de Usuário Segura: Sistema de login completo com proteção de rotas via tokens JWT.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Interface Dinâmica: Sidebar reativa que carrega as últimas consultas sem necessidade de atualização da página.
 
-## Learn More
+👤 Desenvolvedora
+Manuela Lobo
 
-To learn more about Next.js, take a look at the following resources:
+🎓 Estudante do último ano de Análise e Desenvolvimento de Sistemas (ADS).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⚙️ Experiência prévia no setor de eletrônica industrial (Taigar System), aplicando rigor técnico e lógica no desenvolvimento de software.
